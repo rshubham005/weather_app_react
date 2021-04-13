@@ -16,7 +16,7 @@ function Weather() {
 }
     useEffect(()=>
     {
-        let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityinput}&units=metric&appid=fb4296b357e6798e71a0da94c63308bd`
+        let url=`https://api.openweathermap.org/data/2.5/weather?q=${cityinput}&units=metric&appid=fb4296b357e6798e71a0da94c63308bd`
         axios.get(url)
         .then(response =>{
             console.log(response.data.name)
